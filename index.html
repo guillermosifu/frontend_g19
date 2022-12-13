@@ -1,13 +1,42 @@
 <!-- como hago la estructura basica  -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css">
     <title>G19</title>
-</head>
-<body>
-    <h1>HOLA MUNDO </h1>
-</body>
+  </head>
+  <body>
+    <!-- encabezado  -->
+    <header class="header">
+      <span> LOGO </span>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="">Trabajos</a>
+          </li>
+          <li>
+            <a href="">Sobre mi </a>
+          </li>
+          <li>
+            <a href="">Contactame</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="banner">
+      <!-- etiqueta no semantica . contenedora  -->
+      <div>
+        <h1 class="title">Mi Nombre es Guillermo Sifuentes</h1>
+        <h2 class="title">Full Satck Web Developer</h2>
+        <p class="resume">programado de tus sueños!!</p>
+        <button class="btn-primary">Download Resume </button>
+      </div>
+      <div>
+        <img class="img-profile"  src="./src/profile.jpg" alt="foto de perfil">        
+      </div>
+    </section>
+  </body>
 </html>

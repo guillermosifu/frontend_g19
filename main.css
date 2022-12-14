@@ -132,10 +132,9 @@ hr{
 }
 
 .link-portafolio{
-    color: #000;
+    color: #0a360a;
     text-decoration: none;
-    transition: 0.3s;
-}
+    transition: 0.3s;}
 
 .link-portafolio:hover{
     color: #ff6464;
@@ -150,3 +149,4 @@ hr{
     border: solid 1px gray;
     border-radius: 10px;
 }
+

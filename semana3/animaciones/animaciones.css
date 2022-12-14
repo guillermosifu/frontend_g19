@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.texto-animado{
+    /* una animacion esta compjuesyta por un nombre y un tiempo  */
+animation-name: texto-volador;
+animation-duration: 5s;
+animation-iteration-count: 1;
+border: solid;
+padding: 10px;
+margin-top: 15px;
+
+}
+
+@keyframes texto-volador{
+    from{
+        margin-left: 100%;
+        width: 300px;
+        background-color: aqua;
+        border: none;
+    }
+    to{
+        margin-left: -100%;
+        background-color: brown;
+        color: white;
+        border: none;
+    }
+}
+
+/* esta es de la imagen */
+
+.image-animada{
+    width: 300px;
+    animation-name: image-resize;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes image-resize{
+    from{
+        width: 20px;
+    }
+    to{
+        width: 500px;
+    }
+}
+
+/*  esta es de la caja */
+
+.box-uno{
+    width: 50px;
+    height: 50px;
+    border: solid;
+    background-color: red;
+    animation-name: box-animation;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes box-animation{
+    0%{
+        background-color: black;
+    }
+    25%{
+        background-color: red;
+    }
+    50%{
+        background-color: rgb(34, 0, 128);
+    }
+    75%{
+        background-color: blue;
+    }
+    100%{
+        background-color: green;
+    }
+}
+/* esta es de ball */
+.ball-uno{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;   
+    background-color: #142850;
+    animation-name: ball-animation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes ball-animation{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-170px);
+    }
+}
+/*  esrcirbe soloe */
+
+.lineas{
+    position: relative;
+    text-align: center;
+    width: 600px;
+    margin: auto;
+    font-size: 25px;
+    white-space: nowrap;
+    border-right: 10px solid green;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+.texto-animado-dos{
+    animation: texto-animado-dos  5s steps(144) 1s normal both,
+    cursor 0.5s steps(50) infinite normal;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes texto-animado-dos{
+    from{
+        width: 0;
+    }
+    to{
+        width: 1200px;
+    }
+}
+
+@keyframes cursor{
+    from{
+        border-right-color: rgb(255,77,196) ;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}

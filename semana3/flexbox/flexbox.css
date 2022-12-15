@@ -1,0 +1,27 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+h1{
+    border: solid;
+    text-align: center;
+    height: 300px;
+    
+}
+
+span{
+    
+    border: solid;
+    text-align: center;    
+}
+
+.main-navegacion{
+    border: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

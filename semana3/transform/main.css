@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    height: 100vh;
+}
+
+.form{
+    border:2px solid #ccc;
+    padding: 50px;
+    border-radius: 9px;
+}
+
+.form h2{
+    letter-spacing: 3px;
+    color: rgb(33,118, 253);
+}
+
+.input-form{
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    border: solid 2px #ccc;
+    border-radius: 8px;
+}
+
+/* ease-out - empieza raido ya acaba lento
+linear-la misma velocidad dse que empiesa hasta terminar
+ease-in -empieza lento y termina repido
+ease-in-out  -empieza lento y acaba lento  */
+
+
+.btn-primary{
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(33,118,253);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    transition: ease-out 0.5s;
+}
+
+/* usaremos transform cuando queramos cambiar el estado de una propiedas  */
+
+.btn-primary:hover{
+    background-color: rgb(250, 208, 20);
+}
+
+.container-help{
+    transition: ease-in 5s;
+}
+
+.img-help{
+    width: 20px;
+    cursor: pointer;
+}
+
+.text-help{
+    display: none;
+    width: 200px;
+    height: 200px;
+    transition: ease-in 1s;
+}
+
+.button-help{
+    border: none;
+    background-color: transparent;
+}
+
+.container-help:hover + .text-help{
+    display: block !important;
+    transform: scale(0.5); 
+}

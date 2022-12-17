@@ -80,6 +80,6 @@ ease-in-out  -empieza lento y acaba lento  */
 }
 
 .container-help:hover + .text-help{
-    display: block !important;
+    display: block ;
     transform: scale(0.5); 
 }

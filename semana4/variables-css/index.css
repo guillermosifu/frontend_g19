@@ -1,0 +1,7 @@
+@import'./modules/variables.css';
+@import'./modules/section.css';
+
+.body{
+    background-color:var(--primary-theme-color) ;
+    color: var(--primary-text-color);
+}

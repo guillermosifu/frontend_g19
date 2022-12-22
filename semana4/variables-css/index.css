@@ -1,6 +1,7 @@
 @import'./modules/variables.css';
 @import'./modules/section.css';
 @import'./modules/animation.css';
+@import'./modules/footer.css';
 
 .body{
     background-color:var(--primary-theme-color) ;

@@ -59,7 +59,7 @@
     top: 60%;
     left: 0;
     filter: blur(0.125rem);
-    transform: rotateX(150deg);
+    transform: rotateX(160deg);
 }
 
 .section__link-letter::after{

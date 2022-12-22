@@ -1,0 +1,11 @@
+
+
+footer{
+    border: solid;
+    background-color: var(--fondo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-section);
+    border-radius: var(--footer-border);
+}

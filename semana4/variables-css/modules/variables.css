@@ -1,6 +1,6 @@
 
 :root{
-    --primary-theme-color:#20233a;
+    --primary-theme-color:green;
     --secondary-theme-color: #282c34;
     --primary-text-color:#fff;
     --primary-font-family:'arial';
@@ -14,6 +14,7 @@
     --letter-color-5:red;
     --letter-color-6:aqua;
     --fondo:blue;
+    --footer-border:10px
 }
 
 

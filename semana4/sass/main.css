@@ -36,7 +36,7 @@ body {
 
 .div-icon-phone {
   background: url("./img/telefono.jpg");
-  border: solid 2px red;
+  border: solid 5px aqua;
   background-size: cover;
   width: 400px;
   height: 400px;
@@ -44,7 +44,15 @@ body {
 
 .div-icon-mail {
   background: url("./img/email.png");
-  border: solid 2px blue;
+  border: solid 5px blue;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+
+.div-icon-laptop {
+  background: url("./img/laptop.jpg");
+  border: solid 5px yellow;
   background-size: cover;
   width: 200px;
   height: 200px;

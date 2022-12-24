@@ -30,12 +30,13 @@ body{
 
     .div-icon-#{$name}{
      background: url("./img/#{$icon}");
-     border: solid 2px $color;
+     border: solid 5px $color;
      background-size: cover;
      width: $size;
      height: $size;
     }
 }
 
-@include generate-icons("phone","telefono.jpg" ,red ,400px );
-@include generate-icons("mail","email.png" ,blue ,200px )
+@include generate-icons("phone","telefono.jpg" ,aqua ,400px );
+@include generate-icons("mail","email.png" ,blue ,200px );
+@include generate-icons("laptop","laptop.jpg" ,yellow ,200px );

@@ -60,3 +60,17 @@ return a+b-y
 }
 
 console.log("suma3",suma3(20,20,20))
+
+//funciones flecha cuando solo tien un argumento o parametro no nescia parentesis
+
+const saludar =(nombre,apellido)=>{
+ //como imprime una manehra mas elegante 
+ //reurn "hola mi nombre es" + nombre "y mi apellido es" + apellido
+    return `hola mi nombres es ${nombre} y mi apellido es ${apellido}`
+}
+
+console.log(saludar("guillermo","sifuentes"))
+
+const hello =()=>"hola grupo 19"
+
+console.log(hello())

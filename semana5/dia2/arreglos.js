@@ -16,6 +16,19 @@ console.log("frutas", frutas)
 
 
 //habra de forma de acceder a nu elemento en especifico 
-//como accedemos a un eleemnto 
+//como accedemos a un eleemnto --se accede por su indice-numerico
 
-console.log("alumnos",alumnos[10])
+console.log("alumnos",alumnos[2 + 2])
+
+// se podra alterar un dato en un arry
+// vamod a reasignar el valor del indice 0 
+
+alumnos[0]="jhair";
+console.log("reasignado", alumnos)
+
+//podemos crear un nuevo elemento a un array 
+
+alumnos[6]="diago";
+alumnos[100]="guillermo";
+
+console.log("cantidad de alumnos ",alumnos.length)

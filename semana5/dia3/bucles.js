@@ -99,3 +99,6 @@ console.log(contarVocales("aeiou"));
 console.log(contarVocales("guillermo"))
 
 
+//escribir un programa que es escriba en pentalla los divisores comunes
+//de dos numero dados 
+

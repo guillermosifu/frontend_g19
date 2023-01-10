@@ -91,3 +91,34 @@ const producto2 =[
 ]
 
 //reto cambair o modificar el precio al doble 
+
+const precioCyberwow = producto2.map((producto)=>{
+    //en cada vuelta del elemento modifiar el return
+    //producto2={name:"laptop", price :1500}
+    return{
+        name:`Cyberwow ${producto.name}`,
+        price:producto.price /2
+    }
+})
+
+console.log("preciomodficado",precioCyberwow)
+
+//escribir un programaita que muestre la tabla de multiplicar del 1 al 10 
+
+const imprimirTable=(numero)=>{
+    //esta instancia esta creanado un array
+    const arrayDiez =[1.2,3,4,5,6,7,8,9,10]
+
+    arrayDiez.map((table,index)=>{
+        console.log("producto",numero *(index + 1))
+    });
+
+}
+
+imprimirTable(3)
+
+//------------------------------------------
+//crear una array de numero y luego calculemos el cubo de cada numero 
+// y hy qye guardarlo en una variable 
+
+const numeroCubo=[1,2,3,4,5,6,7,8,9,10];

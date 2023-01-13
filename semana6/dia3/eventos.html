@@ -22,10 +22,31 @@
      <button onmouseover="console.log('esto es mouse over 2')">
         onmouseover
      </button>
+     <!-- evento doble click -->
+     <p ondblclick="console.log('dosclick')">dos click</p>
+     <button ondblclick="console.log('dosclick 2')">dos click</button>
+
+     <!-- imprimir desde otro archivo  -->
+     <button onclick="imprimir()">imprime desde js</button>
+     <button onclick="imprimir()">imprimi desd js otro ejemplo</button>
+
+     <!-- ------------------------------- -->
+
+     <div>
+        <h2>CALCULADORA BASICA</h2>
+        <input type="text" placeholder="Numero 1" id="numero1">
+        <input type="text" placeholder="Numero 2" id="numero2">
+        <button onclick="calculadorHTML('+')">+</button>
+        <button>-</button>
+        <button>*</button>
+        <button>/</button>
+        <div id="resultado"></div>
+     </div>
 
 
 
 
     <script src="./eventos.js"> </script>
+    <script src="./operaciones.js"></script>
 </body>
 </html>

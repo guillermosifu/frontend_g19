@@ -37,6 +37,5 @@ function calculadorHTML(operacion){
     const contenedor = document.querySelector("#resultado")
     contenedor.appendChild(p);
 
-
 }
 

@@ -1,13 +1,11 @@
 
 const formulario = document.querySelector("#formulario");
 
-//crear evento 
 
-formulario.addEventListener("submit" , validarFormulario)
 
 //crear mi funcion-
 
-function validarFormulario(e){
+const validarFormulario =(e)=>{
     e.preventDefault();
 
     const nombre = document.querySelector("#nombre").value
@@ -17,3 +15,6 @@ function validarFormulario(e){
     respuesta.textContent =`Hola ${nombre} tienes la edad de ${edad}`
 
 }
+//crear evento 
+
+formulario.addEventListener("submit" , validarFormulario)

@@ -43,3 +43,14 @@ if(email !== null && password !== null){
 }else{
     usuarioSection.style.display="none"
 }
+
+btnCerrarSesion.onclick = function(){
+    //vamoa a eliminar las variables del local storage 
+    //localStorage.removeItem(key)
+    localStorage.removeItem("password");
+    localStorage.removeItem("email");
+// es mostrar el formulario y cultar el mensaje capturadp 
+form.style.display="block";
+usuarioSection.style.display="none";
+
+}

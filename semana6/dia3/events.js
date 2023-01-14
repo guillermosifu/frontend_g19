@@ -56,6 +56,7 @@ btnSucces.onclick = function(){
 const btnPruebas = document.querySelector("#btn-pruebas");
 btnPruebas.onclick = function(){
     Swal.fire({
+    icon:"error",
     title:"Alerta",
     text:"texto de alerta",
     showDenyButton: true,
@@ -63,6 +64,4 @@ btnPruebas.onclick = function(){
     confirmButtonText:"guardar",
     denyButtonText :"No quiero"
 })
-
-
 }

@@ -44,3 +44,25 @@ btnError.onclick = function(e){
     showAlert("error","Hubo un error","Email or password erroneos")
 
 }
+
+//-----------------------------------------------
+
+const btnSucces = document.querySelector("#btn-success");
+btnSucces.onclick = function(){
+    showAlert("success","Todo ok","Todo salio bien")
+}
+
+//--------------------------------------------------
+const btnPruebas = document.querySelector("#btn-pruebas");
+btnPruebas.onclick = function(){
+    Swal.fire({
+    title:"Alerta",
+    text:"texto de alerta",
+    showDenyButton: true,
+    showCancelButton: true,
+    confirmButtonText:"guardar",
+    denyButtonText :"No quiero"
+})
+
+
+}

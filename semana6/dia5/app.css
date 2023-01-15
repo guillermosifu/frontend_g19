@@ -12,6 +12,13 @@
     --clr-primary:#ffa7c4;
     --clr-grey:#cbd5e1;
 }
+.red-theme{
+    --clr-bcg:#071538;
+    --clr-font:rgb(255, 255, 255);
+    --clr-primary:#7b2caf;
+    --clr-grey:#262a30;
+}
+
 
 body{
     font-family: Arial, Helvetica, sans-serif;

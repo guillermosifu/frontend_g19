@@ -1,6 +1,7 @@
 
-const toggleBtn = document.querySelector('.btn');
+const Btnprimary = document.querySelector('.btn');
 
-toggleBtn.addEventListener('onclick',()=>{
-    document.documentElement.classList.toggle('dark-theme');
+Btnprimary.addEventListener('click',()=>{
+    document.documentElement.classList.toggle('red-theme');
 });
+

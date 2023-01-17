@@ -29,7 +29,7 @@
           </div>
           <div class="col-md-2">
             <div class="d-grid gap-2">
-              <button class="btn btn-danger">Search</button>
+              <button id="github-action-search" class="btn btn-danger">Search</button>
             </div>
           </div>
           <div class="col-md-12 mt-4">
@@ -53,7 +53,7 @@
                       <p id="github-bio">This profile no bio</p>
                     </div>
                     <div class="col-md-6 text-end">
-                      <p>Joined 16 January 2020</p>
+                      <p id="github-joined">Joined 16 January 2020</p>
                     </div>
                     <div class="col-md-12">
                       <div class="card bg-blue-dark">
@@ -61,6 +61,15 @@
                           <div class="row">
                             <div class="col-md-4">
                               <p>Repos</p>
+                              <h4 id="github-repos">8</h4>
+                            </div>
+                            <div class="col-md-4">
+                              <p>Followers</p>
+                              <h4 id="github-followers">18</h4>
+                            </div>
+                            <div class="col-md-4">
+                              <p>Following</p>
+                              <h4 id="github-following">28</h4>
                             </div>
                           </div>
                         </div>
@@ -74,5 +83,7 @@
         </div>
       </div>
     </section>
+    <script src="./app.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

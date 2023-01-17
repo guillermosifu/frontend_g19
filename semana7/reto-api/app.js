@@ -39,6 +39,8 @@ const githubJoined = document.querySelector("#github-joined");
 const githubRepos = document.querySelector("#github-repos");
 const githubFollowers = document.querySelector("#github-followers");
 const githubFollowing = document.querySelector("#github-following");
+const githubLocation = document.querySelector("#github-location");
+const githubUrl=document.querySelector("#github-url")
 
 //action button  input 
 const githubActionSearch = document.querySelector("#github-action-search");
@@ -60,7 +62,7 @@ githubActionSearch.onclick = ()=>{
     //ojooooo  solo llega a ejecutar la fucion si el username no esta vacio 
     //recuerde que el return termina la ejecucion
     //q funcion debo llamar ??
-    obtenerDatosGithub(username);
+    obtenerDatosGithub(username); 
 }
 
 githubInputSearch.addEventListener("keyup",function(event){
@@ -89,11 +91,19 @@ const obtenerDatosGithub = async (username = "guillermosifu")=>{
     setDataUSer(data)
    
 };
+const formatDate =(fecha)=>{
+    let date = new Date(fecha);
+    return date.toISOString().split("T")[0];
+}
+
 // es la insercion al documento..
 const setDataUSer =(data)=>{
     imageProfile.src = data.avatar_url;
     githubName.textContent = data.login;
-    githubBio.innerHTML= data.bio;
+    githubBio.textContent= data.bio;
+    githubJoined.innerHTML= formatDate(data.created_at);
+    githubUrl.innerHTML=data.html_url;
+    githubLocation.innerHTML=data.location;
     
 
 }

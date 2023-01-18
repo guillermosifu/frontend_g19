@@ -69,6 +69,7 @@ const obtenerDetallePokemon = async (url) => {
   console.log("detalle", data);
   pokemonName.innerHTML=data.name;
   pokemonImg.src = data.sprites.other.dream_world.front_default;
+  pokemonPeso.innerHTML= data.weight;
 
 };
 

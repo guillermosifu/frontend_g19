@@ -15,9 +15,10 @@ const pokemonTipo2 = document.querySelector("#pokemon_tipo2")
 // vamos a crear una funcion para obtener los datos
 const obtenerPokemones = async () => {
   const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=100");
-  const data = await response.json();
+  const data = await response.json(); 
 
   console.log(data.results);
+  setPokemonsInView(data.results);
  
 };
 
@@ -66,8 +67,12 @@ const obtenerDetallePokemon = async (url) => {
   const response = await fetch(url);
   const data = await response.json();
   console.log("detalle", data);
+  pokemonName.innerHTML=data.name;
+  pokemonImg.src = data.sprites.other.dream_world.front_default;
 
 };
+
+obtenerPokemones()
 
 
 

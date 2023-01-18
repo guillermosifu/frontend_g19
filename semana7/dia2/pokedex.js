@@ -36,11 +36,11 @@ const setPokemonsInView = (results) => {
     // index = 1 + 1
     // !aca usamos await porque getColorPokemon es una funcion async por
     // !por ende no se cuanto demore en reponder
-   
+   const bgColor = await getColorPokemon(index + 1)
 
     const html = `
       <div class="col-md-3 mt-3">
-        <div class='card' '>
+        <div class='card' style = 'background-color :${bgColor}'>
           <img 
             class='card-img-top mt-2'
             width='100'
@@ -73,7 +73,27 @@ const obtenerDetallePokemon = async (url) => {
 
 };
 
-obtenerPokemones()
+ obtenerPokemones()
+
+const color ={
+    red:"rgb(255,48,50,0,6)",
+    green:"rgb(85,180,50,0,7)",
+    blue:"rgb(113,104,225,0,7)",
+    brown:"rgb(113,104,226,0,6)",
+
+}
+
+
+
+const getColorPokemon = async (id)=>{
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon-species/${id}`)
+    const data = await response.json();
+    console.log(data.color.name);
+    return color[data.color.name];
+
+};
+
+
 
 
 
